@@ -3,7 +3,7 @@
 Perform K-means clustering for the airlines data to obtain optimum number of clusters
 Draw the inferences from the clusters obtained
 
-# Hierarchial-Clustering-using-Python
+# K-means Clustering-using-Python
 
 In **Unsupervised Learning** we have different type of algorithms such as:
 1. Clustering
