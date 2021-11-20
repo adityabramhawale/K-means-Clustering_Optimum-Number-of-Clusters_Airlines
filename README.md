@@ -3,7 +3,7 @@
 Perform K-means clustering for the airlines data to obtain optimum number of clusters
 Draw the inferences from the clusters obtained
 
-# K-means Clustering-using-Python
+# K-Means-Clustering-using-Python
 
 In **Unsupervised Learning** we have different type of algorithms such as:
 1. Clustering
@@ -19,34 +19,36 @@ In **Clustering** we have :
 2. K-Means Clustering
 3. DBSCAN Clustering
 
-In this repository we will discuss mainly about *Hierarchial Clustering*
+In this repository we will discuss mainly about *K-Means Clustering*
 
- This is mainly used for Numerical data, it is also called as bottom-up approach. In this, among all the records two records which are having less Euclidean distance are merged in to one cluster and again this cluster inturn with which it is having less euclidean distance that record is merged with the cluster.
- 
- Now how to calculate distance between 2 clusters or distance between cluster and record ?
- 
-    For this we have different methods:
-    1. Single linkage method : *It will consider minimum distance*
-    2. Complete linkage method : *It will consider maximum distance*
-    3. Average linkage method : *It will consider average of all distances*
-    4. centroid linkage method : *It will consider centroid of records of one cluster and centroid of records of other cluster and now distance between these two centroids is considered.*
-    
-Summarization of entire cluster process is done using **Dendogram**
 
-**Advantages :**
-1. Best suitable for smaller datasets.
-2. Dendogram gives best understanding of clustered data.
-
-**Diasadvantages :**
-1. It is slower for large datasets.
-    
+  step 1: K= 3, we can take different values for K, here K=3 so entire data is randomly divided in to 3 parts need not be equal.\
+  step 2: Centroid computation - calculate centroid for each part.\
+  step 3: find distance from centroid to all datapoints in each part.\
+  step 4: Move data point in to nearest centroid.\
+  step 5: Recompute centroids.\
+  step 6: Repeat steps from 3 to 5 until there is no need to move data points from one cluster to other cluster.
+  
+  
+  By using Elbow graph or screw plot we will decide proper K-value.
+  
+  
+  **Advantages:**
+  
+  1. Partition of data accurately fast
+  2. Suitable for larger datasets
+  
+  
+  **Diasadvantages:**
+  
+  1. If we have outliers, it will give false clusters
 
 ## Data used:
-        
-         EastWestAirlines : Clustering of Airlines based on their similarity
+         
+          EastWestAirlines : Clustering of Airlines based on their similarity
 
 ##  Programming:
            Python
+           
 
-
-**The Codes regarding this Hierarchial Clustering with three different business problems *Clustering of Airlines* with their datasets are present in this Repository in detail**
+**The Codes regarding this K-Means Clustering with three different business problems *Clustering of Airlines* with their datasets are present in this Repository in detail**
